@@ -11,7 +11,7 @@ system so you can deploy it quickly and iterate without a heavy build step.
 - **Curated product grid** – Spotlight live apps, upcoming launches, and ideas
   still in the lab. Cards link to real experiences like the
   [Password Generator](http://password-generator.simplifymylife.app/),
-[Online Games](https://games.simplifymylife.app), and
+  [Games Hub](https://games.simplifymylife.app), and
   [RedLytics Reddit insights](https://redlytics.vercel.app/).
 - **Brand-consistent visuals** – Navigation, favicon, and product tiles share a
   cohesive gradient-driven logo system with automatic fallbacks for missing
