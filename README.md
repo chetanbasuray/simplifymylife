@@ -13,6 +13,9 @@ system so you can deploy it quickly and iterate without a heavy build step.
   [Password Generator](http://password-generator.simplifymylife.app/),
   [Games Hub](https://games.simplifymylife.app), and
   [RedLytics Reddit insights](https://redlytics.vercel.app/).
+- **Brand-consistent visuals** – Navigation, favicon, and product tiles share a
+  cohesive gradient-driven logo system with automatic fallbacks for missing
+  icons.
 - **Call-to-action modules** – Encourage visitors to read the blog, explore the
   ecosystem, or get in touch.
 - **Automatic year updates** – A tiny script keeps the footer copyright
@@ -43,10 +46,15 @@ build command.
 ## 🎨 Customization tips
 
 - **Branding:** Update colors, typography, and spacing inside `styles.css` to
-  align with your visual identity.
+  align with your visual identity. Swap in a new `assets/logo.svg` and
+  `assets/icon.svg` to refresh the nav logo and favicon in one go.
 - **Content:** Edit `index.html` to rename sections, refresh copy, or link to
   new destinations such as updated product URLs.
-- **Assets:** Replace the SVGs in `assets/` with your own logos or illustrations.
+- **Assets:** Replace the SVGs in `assets/` with your own logos or
+  illustrations. The product cards can ingest remote favicons (via the Google
+  S2 API) or you can point each `img` at a local asset; if an icon fails to
+  load, the gradient fallback in `assets/fallback-icon.svg` keeps the layout
+  polished.
 - **Support widget:** Configure the Buy Me a Coffee widget by changing the
   `data-*` attributes in the script tag near the bottom of `index.html`.
 - **Contact form:** Update the Formspree endpoint or adjust fields inside the
