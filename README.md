@@ -14,8 +14,10 @@ system so you can deploy it quickly and iterate without a heavy build step.
   ecosystem, or get in touch.
 - **Automatic year updates** – A tiny script keeps the footer copyright
   current.
-- **Buy Me a Coffee button** – Visitors can support the project with a single
-  click.
+- **Floating support widget** – The Buy Me a Coffee widget rides along the page
+  so fans can tip at any time.
+- **Built-in contact form** – Collect messages securely via Formspree without
+  adding server infrastructure.
 
 ## 📂 Project structure
 
@@ -42,8 +44,10 @@ build command.
 - **Content:** Edit `index.html` to rename sections, refresh copy, or link to
   new destinations.
 - **Assets:** Replace the SVGs in `assets/` with your own logos or illustrations.
-- **Support button:** Configure the Buy Me a Coffee button by changing the
+- **Support widget:** Configure the Buy Me a Coffee widget by changing the
   `data-*` attributes in the script tag near the bottom of `index.html`.
+- **Contact form:** Update the Formspree endpoint or adjust fields inside the
+  `#contact` section of `index.html` to fit your workflow.
 
 ## 🌐 Deployment
 

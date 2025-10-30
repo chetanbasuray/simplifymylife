@@ -17,7 +17,7 @@
       <header class="hero">
         <nav class="top-nav">
           <div class="brand">Simplify My Life</div>
-          <a class="cta" href="mailto:hello@simplifymylife.app">Contact</a>
+          <a class="cta" href="#contact">Contact</a>
         </nav>
         <div class="hero-content">
           <p class="tagline">Tools, insights, and playful experiences</p>
@@ -57,9 +57,9 @@
             </article>
             <article class="card">
               <div class="pill coming">Coming Soon</div>
-              <h3>Fun Zone</h3>
-              <p>Play browser-based experiments and mini-games at <strong>fun.simplifymylife.app</strong>.</p>
-              <a href="https://fun.simplifymylife.app" target="_blank" rel="noreferrer" class="card-link">Preview the playground</a>
+              <h3>Games Hub</h3>
+              <p>Play browser-based experiments and mini-games at <strong>games.simplifymylife.app</strong>.</p>
+              <a href="https://games.simplifymylife.app" target="_blank" rel="noreferrer" class="card-link">Preview the playground</a>
             </article>
             <article class="card">
               <div class="pill live">Live</div>
@@ -83,7 +83,7 @@
               <div class="pill planned">Roadmap</div>
               <h3>More tools coming soon</h3>
               <p>Workflow automation, AI copilots, and integrations that connect your favorite services.</p>
-              <a href="mailto:hello@simplifymylife.app" class="card-link">Suggest an idea</a>
+              <a href="#contact" class="card-link">Suggest an idea</a>
             </article>
           </div>
         </section>
@@ -99,12 +99,50 @@
             <a class="primary" href="https://vercel.com" target="_blank" rel="noreferrer">Deploy on Vercel</a>
           </div>
         </section>
+
+        <section class="contact" id="contact">
+          <div class="contact-card">
+            <h2>Let's build something together</h2>
+            <p>
+              Share feedback, request a feature, or start a new collaboration. We'll
+              reply as soon as your message lands in the inbox.
+            </p>
+            <form action="https://formspree.io/f/xldobqpa" method="POST" class="contact-form">
+              <div class="form-field">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="form-field">
+                <label for="contact-email">Email</label>
+                <input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="contact-message">How can we help?</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us about your idea or question"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="primary submit">Send message</button>
+            </form>
+          </div>
+        </section>
       </main>
 
       <footer class="footer">
         <p>© <span id="year"></span> Simplify My Life. Crafted with focus and curiosity.</p>
         <div class="footer-links">
-          <a href="mailto:hello@simplifymylife.app">Contact</a>
+          <a href="#contact">Contact</a>
           <a href="https://www.simplifymylife.app" target="_blank" rel="noreferrer">Main Site</a>
         </div>
       </footer>
@@ -114,17 +152,16 @@
       yearEl.textContent = new Date().getFullYear();
     </script>
     <script
-      type="text/javascript"
-      src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-      data-name="bmc-button"
-      data-slug="donatetochetan"
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="donatetochetan"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Thank you for visiting. If you find this useful, please consider buying me a coffee"
       data-color="#BD5FFF"
-      data-emoji="☕"
-      data-font="Cookie"
-      data-text="Buy me a coffee"
-      data-outline-color="#000000"
-      data-font-color="#ffffff"
-      data-coffee-color="#FFDD00"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"
     ></script>
   </body>
 </html>
