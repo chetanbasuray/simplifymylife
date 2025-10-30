@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Policy · Simplify My Life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+    <link rel="apple-touch-icon" href="assets/icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="legal-page">
+    <div class="page-wrapper">
+      <header class="legal-header">
+        <div class="legal-nav">
+          <a class="brand" href="index.html" aria-label="Simplify My Life home">
+            <img src="assets/logo.svg" alt="Simplify My Life" width="56" height="48" />
+            <span class="brand-title">Simplify My Life</span>
+          </a>
+          <div class="legal-nav-links">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="accessibility.html">Accessibility</a>
+          </div>
+        </div>
+        <h1>Cookie Policy</h1>
+        <p>
+          This policy explains how Simplify My Life and our partners use cookies
+          and similar technologies across our sites and applications.
+        </p>
+        <p class="legal-updated">Last updated: June 10, 2024</p>
+      </header>
+
+      <main class="legal-content">
+        <section class="legal-section">
+          <h2>What are cookies?</h2>
+          <p>
+            Cookies are small text files stored on your device. They help
+            applications remember your preferences and provide essential
+            functionality. We also use local storage and similar technologies for
+            the same purpose.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>How we use cookies</h2>
+          <ul>
+            <li>Maintain session state across our static and interactive tools.</li>
+            <li>Remember preferences such as theme or difficulty settings.</li>
+            <li>
+              Measure basic, anonymous analytics to understand usage patterns and
+              improve the experience.
+            </li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>Third-party cookies</h2>
+          <p>
+            Embedded services like Buy Me a Coffee or analytics providers may set
+            cookies when you interact with their widgets. These cookies are
+            controlled by the respective provider and subject to their policies.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>Managing cookies</h2>
+          <p>
+            Most browsers allow you to clear or block cookies and local storage
+            through their privacy settings. Disabling cookies may impact features
+            such as saved preferences or login-free personalization.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>Contact</h2>
+          <p>
+            If you have questions about our use of cookies, reach out via the
+            <a href="index.html#contact">Simplify My Life contact form</a>.
+          </p>
+        </section>
+      </main>
+
+      <div class="legal-footer">
+        <footer class="footer">
+          <p>
+            © <span id="year"></span> Simplify My Life. Crafted with focus and
+            curiosity.
+          </p>
+          <div class="footer-links">
+            <a href="index.html#contact">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="cookie-policy.html">Cookie Policy</a>
+            <a href="accessibility.html">Accessibility Statement</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      const yearEl = document.getElementById("year");
+      yearEl.textContent = new Date().getFullYear();
+    </script>
+    <script>
+      (function () {
+        const storageKey = "bmcWidgetSeen";
+        let hasSeenWidget = false;
+        try {
+          hasSeenWidget = localStorage.getItem(storageKey) === "true";
+        } catch (error) {
+          hasSeenWidget = false;
+        }
+        const widgetScript = document.createElement("script");
+        widgetScript.dataset.name = "BMC-Widget";
+        widgetScript.dataset.cfasync = "false";
+        widgetScript.src = "https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js";
+        widgetScript.dataset.id = "donatetochetan";
+        widgetScript.dataset.description = "Support me on Buy me a coffee!";
+        if (!hasSeenWidget) {
+          widgetScript.dataset.message =
+            "Thank you for visiting. If you find this useful, please consider buying me a coffee";
+        }
+        widgetScript.dataset.color = "#BD5FFF";
+        widgetScript.dataset.position = "Right";
+        widgetScript.dataset.x_margin = "18";
+        widgetScript.dataset.y_margin = "18";
+        widgetScript.addEventListener("load", function () {
+          if (!hasSeenWidget) {
+            try {
+              localStorage.setItem(storageKey, "true");
+            } catch (error) {
+              /* localStorage may be unavailable */
+            }
+          }
+        });
+        document.body.appendChild(widgetScript);
+      })();
+    </script>
+  </body>
+</html>

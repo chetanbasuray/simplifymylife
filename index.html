@@ -10,14 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+    <link rel="apple-touch-icon" href="assets/icon.svg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-wrapper">
+    <div class="page-wrapper" id="top">
       <header class="hero">
         <nav class="top-nav">
-          <div class="brand">Simplify My Life</div>
-          <a class="cta" href="mailto:hello@simplifymylife.app">Contact</a>
+          <a class="brand" href="#top" aria-label="Simplify My Life home">
+            <img src="assets/logo.svg" alt="Simplify My Life" width="56" height="48" />
+            <span class="brand-title">Simplify My Life</span>
+          </a>
+          <a class="cta" href="#contact">Contact</a>
         </nav>
         <div class="hero-content">
           <p class="tagline">Tools, insights, and playful experiences</p>
@@ -50,53 +55,185 @@
           </p>
           <div class="card-grid">
             <article class="card">
-              <div class="pill live">Live</div>
-              <h3>Blog</h3>
+              <div class="card-heading">
+                <div class="card-title-group">
+                  <span class="card-logo">
+                    <img
+                      src="https://blog.simplifymylife.app/favicon.ico"
+                      alt="Blog logo"
+                      loading="lazy"
+                      onerror="this.onerror=null;this.src='assets/fallback-icon.svg';"
+                      width="48"
+                      height="48"
+                    />
+                  </span>
+                  <h3>Blog</h3>
+                </div>
+                <div class="pill live">Live</div>
+              </div>
               <p>Stories, lessons, and behind-the-scenes updates from the Simplify My Life journey.</p>
               <a href="https://blog.simplifymylife.app" target="_blank" rel="noreferrer" class="card-link">Visit the blog</a>
             </article>
             <article class="card">
-              <div class="pill coming">Coming Soon</div>
-              <h3>Fun Zone</h3>
-              <p>Play browser-based experiments and mini-games at <strong>fun.simplifymylife.app</strong>.</p>
-              <a href="https://fun.simplifymylife.app" target="_blank" rel="noreferrer" class="card-link">Preview the playground</a>
+              <div class="card-heading">
+                <div class="card-title-group">
+                  <span class="card-logo">
+                    <img
+                      src="https://games.simplifymylife.app/favicon.ico"
+                      alt="Games Hub logo"
+                      loading="lazy"
+                      onerror="this.onerror=null;this.src='assets/fallback-icon.svg';"
+                      width="48"
+                      height="48"
+                    />
+                  </span>
+                  <h3>Games Hub</h3>
+                </div>
+                <div class="pill live">Live</div>
+              </div>
+              <p>
+                Jump into rotating puzzles and browser-friendly mini-games at
+                <strong>games.simplifymylife.app</strong>.
+              </p>
+              <a
+                href="https://games.simplifymylife.app"
+                target="_blank"
+                rel="noreferrer"
+                class="card-link"
+                >Play now</a
+              >
             </article>
             <article class="card">
-              <div class="pill live">Live</div>
-              <h3>Password Generator</h3>
+              <div class="card-heading">
+                <div class="card-title-group">
+                  <span class="card-logo">
+                    <img
+                      src="https://password-generator.simplifymylife.app/favicon.ico"
+                      alt="Password Generator logo"
+                      loading="lazy"
+                      onerror="this.onerror=null;this.src='assets/fallback-icon.svg';"
+                      width="48"
+                      height="48"
+                    />
+                  </span>
+                  <h3>Password Generator</h3>
+                </div>
+                <div class="pill live">Live</div>
+              </div>
               <p>Create secure, memorable passwords in seconds with our minimalist generator.</p>
-              <a href="#" class="card-link">Launch generator</a>
+              <a
+                href="http://password-generator.simplifymylife.app/"
+                target="_blank"
+                rel="noreferrer"
+                class="card-link"
+                >Launch generator</a
+              >
             </article>
             <article class="card">
-              <div class="pill live">Live</div>
-              <h3>AI Reddit Account Analysis</h3>
-              <p>Get insights on any Redditor using AI-powered summaries and personality breakdowns.</p>
-              <a href="#" class="card-link">Analyze a profile</a>
+              <div class="card-heading">
+                <div class="card-title-group">
+                  <span class="card-logo">
+                    <img
+                      src="https://redlytics.vercel.app/favicon.ico"
+                      alt="RedLytics logo"
+                      loading="lazy"
+                      onerror="this.onerror=null;this.src='assets/fallback-icon.svg';"
+                      width="48"
+                      height="48"
+                    />
+                  </span>
+                  <h3>AI Reddit Account Analysis</h3>
+                </div>
+                <div class="pill live">Live</div>
+              </div>
+              <p>
+                Explore <strong>RedLytics</strong> for AI-powered Reddit summaries,
+                vibe checks, and personality breakdowns.
+              </p>
+              <a
+                href="https://redlytics.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                class="card-link"
+                >Analyze a profile</a
+              >
             </article>
             <article class="card">
-              <div class="pill planned">In Development</div>
-              <h3>Image Studio</h3>
+              <div class="card-heading">
+                <div class="card-title-group">
+                  <span class="card-logo">
+                    <img
+                      src="assets/fallback-icon.svg"
+                      alt="Image Studio icon"
+                      loading="lazy"
+                      width="48"
+                      height="48"
+                    />
+                  </span>
+                  <h3>Image Studio</h3>
+                </div>
+                <div class="pill planned">In Development</div>
+              </div>
               <p>Manipulate, enhance, and remix visuals directly in the browser.</p>
               <a href="#" class="card-link">Join the waitlist</a>
             </article>
             <article class="card">
-              <div class="pill planned">Roadmap</div>
-              <h3>More tools coming soon</h3>
+              <div class="card-heading">
+                <div class="card-title-group">
+                  <span class="card-logo">
+                    <img
+                      src="assets/fallback-icon.svg"
+                      alt="Roadmap icon"
+                      loading="lazy"
+                      width="48"
+                      height="48"
+                    />
+                  </span>
+                  <h3>More tools coming soon</h3>
+                </div>
+                <div class="pill planned">Roadmap</div>
+              </div>
               <p>Workflow automation, AI copilots, and integrations that connect your favorite services.</p>
-              <a href="mailto:hello@simplifymylife.app" class="card-link">Suggest an idea</a>
+              <a href="#contact" class="card-link">Suggest an idea</a>
             </article>
           </div>
         </section>
 
-        <section class="cta-section">
-          <div class="cta-card">
-            <h2>Deploy-ready & future-focused</h2>
+        <section class="contact" id="contact">
+          <div class="contact-card">
+            <h2>Let's build something together</h2>
             <p>
-              This site is built as a lightweight static experience, ready for a
-              Vercel deploy. As new products launch, add them here and keep your
-              audience up to speed.
+              Share feedback, request a feature, or start a new collaboration. We'll
+              reply as soon as your message lands in the inbox.
             </p>
-            <a class="primary" href="https://vercel.com" target="_blank" rel="noreferrer">Deploy on Vercel</a>
+            <form action="https://formspree.io/f/xldobqpa" method="POST" class="contact-form">
+              <div class="form-field">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="form-field">
+                <label for="contact-email">Email</label>
+                <input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="contact-message">How can we help?</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us about your idea or question"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="primary submit">Send message</button>
+            </form>
           </div>
         </section>
       </main>
@@ -104,14 +241,52 @@
       <footer class="footer">
         <p>© <span id="year"></span> Simplify My Life. Crafted with focus and curiosity.</p>
         <div class="footer-links">
-          <a href="mailto:hello@simplifymylife.app">Contact</a>
-          <a href="https://www.simplifymylife.app" target="_blank" rel="noreferrer">Main Site</a>
+          <a href="#contact">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+          <a href="accessibility.html">Accessibility Statement</a>
         </div>
       </footer>
     </div>
     <script>
       const yearEl = document.getElementById("year");
       yearEl.textContent = new Date().getFullYear();
+    </script>
+    <script>
+      (function () {
+        const storageKey = "bmcWidgetSeen";
+        let hasSeenWidget = false;
+        try {
+          hasSeenWidget = localStorage.getItem(storageKey) === "true";
+        } catch (error) {
+          hasSeenWidget = false;
+        }
+        const widgetScript = document.createElement("script");
+        widgetScript.dataset.name = "BMC-Widget";
+        widgetScript.dataset.cfasync = "false";
+        widgetScript.src = "https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js";
+        widgetScript.dataset.id = "donatetochetan";
+        widgetScript.dataset.description = "Support me on Buy me a coffee!";
+        if (!hasSeenWidget) {
+          widgetScript.dataset.message =
+            "Thank you for visiting. If you find this useful, please consider buying me a coffee";
+        }
+        widgetScript.dataset.color = "#BD5FFF";
+        widgetScript.dataset.position = "Right";
+        widgetScript.dataset.x_margin = "18";
+        widgetScript.dataset.y_margin = "18";
+        widgetScript.addEventListener("load", function () {
+          if (!hasSeenWidget) {
+            try {
+              localStorage.setItem(storageKey, "true");
+            } catch (error) {
+              /* localStorage may be unavailable */
+            }
+          }
+        });
+        document.body.appendChild(widgetScript);
+      })();
     </script>
   </body>
 </html>
