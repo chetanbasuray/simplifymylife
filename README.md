@@ -10,7 +10,9 @@ system so you can deploy it quickly and iterate without a heavy build step.
   works on any static host.
 - **Curated product grid** – Spotlight live apps, upcoming launches, and ideas
   still in the lab. Cards link to real experiences like the
-  [password generator](http://password-generator.simplifymylife.app/).
+  [Password Generator](http://password-generator.simplifymylife.app/),
+  [Games Hub](https://games.simplifymylife.app), and
+  [RedLytics Reddit insights](https://redlytics.vercel.app/).
 - **Call-to-action modules** – Encourage visitors to read the blog, explore the
   ecosystem, or get in touch.
 - **Automatic year updates** – A tiny script keeps the footer copyright
