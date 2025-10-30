@@ -14,7 +14,7 @@ apps, tools, and playful experiences.
 
 - Update links in `index.html` as new products launch.
 - Adjust the design system in `styles.css` to match future branding tweaks.
-- Replace the placeholder `#` URLs once each tool has a dedicated home.
+- Keep the product URLs in `index.html` aligned with the live experiences (blog, games, password generator, RedLytics, etc.).
 - Swap in your own branding by editing the SVG assets in `assets/logo.svg` and `assets/icon.svg`.
 
 ## Deployment tips

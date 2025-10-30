@@ -1,16 +1,33 @@
 <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="iconGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(24 20) rotate(45) scale(80)">
+    <linearGradient id="iconGradient" x1="12" y1="12" x2="84" y2="84" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#38BDF8" />
       <stop offset="0.5" stop-color="#818CF8" />
       <stop offset="1" stop-color="#EC4899" />
-    </radialGradient>
-    <linearGradient id="iconHighlight" x1="20" y1="20" x2="76" y2="76" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#F8FAFC" stop-opacity="0.9" />
-      <stop offset="1" stop-color="#E0F2FE" stop-opacity="0.05" />
     </linearGradient>
+    <linearGradient id="iconStroke" x1="28" y1="24" x2="72" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F8FAFC" stop-opacity="0.95" />
+      <stop offset="1" stop-color="#E0F2FE" stop-opacity="0.35" />
+    </linearGradient>
+    <filter id="iconShadow" x="-15%" y="-15%" width="130%" height="130%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="shadow" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
   </defs>
-  <rect x="10" y="10" width="76" height="76" rx="24" fill="url(#iconGlow)" />
-  <rect x="16" y="16" width="64" height="64" rx="20" fill="#0F172A" opacity="0.35" />
-  <path d="M66 48.5C66 59.5 58 65 50 65C43.5 65 38.2 61.6 37 55.9L43.5 54.3C44.3 57.7 46.8 59.6 50.1 59.6C53.6 59.6 57.1 57.2 57.1 52.9C57.1 48.9 54.6 47.2 48.8 45.5C39.6 43 35.3 39.5 35.3 33.2C35.3 26.9 40.7 21.5 48.9 21.5C55.3 21.5 61.1 24.7 63 31.9L56.7 33.5C56.2 30.9 54.3 28.9 49 28.9C45 28.9 42.6 31.3 42.6 34.1C42.6 36.9 44.3 38.6 50.2 40.3C58.4 42.8 66 45.3 66 48.5Z" fill="url(#iconHighlight)" />
+  <g filter="url(#iconShadow)">
+    <rect x="12" y="12" width="72" height="72" rx="24" fill="#0F172A" opacity="0.6" />
+    <rect x="16" y="12" width="72" height="72" rx="24" fill="url(#iconGradient)" />
+    <path
+      d="M36 32C40.8 27.2 53.2 27 58 32C61.6 35.8 61.1 41.5 55.6 44.4L43.7 50.6C38.5 53.4 39.4 59.8 45.3 61.8C50.9 63.7 57.9 61.3 61.5 55.8"
+      stroke="url(#iconStroke)"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <circle cx="36" cy="34" r="6" fill="#F8FAFC" fill-opacity="0.85" />
+    <circle cx="56" cy="58" r="5" fill="#F8FAFC" fill-opacity="0.65" />
+  </g>
 </svg>
