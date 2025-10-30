@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simplify My Life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="hero">
+        <nav class="top-nav">
+          <div class="brand">Simplify My Life</div>
+          <a class="cta" href="mailto:hello@simplifymylife.app">Contact</a>
+        </nav>
+        <div class="hero-content">
+          <p class="tagline">Tools, insights, and playful experiences</p>
+          <h1>Life is complex. Your tools shouldn't be.</h1>
+          <p class="description">
+            Simplify My Life is a growing suite of apps crafted to cut through
+            the noise—productivity boosts, creative helpers, and just the right
+            amount of fun. Explore what we have today and see what is launching
+            next.
+          </p>
+          <div class="cta-group">
+            <a class="primary" href="https://blog.simplifymylife.app" target="_blank" rel="noreferrer">Read the blog</a>
+            <a class="secondary" href="#ecosystem">Discover the ecosystem</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="orb orb-three"></div>
+        </div>
+      </header>
+
+      <main>
+        <section class="ecosystem" id="ecosystem">
+          <h2>Explore the Simplify My Life ecosystem</h2>
+          <p class="section-lead">
+            Dive into the products that are already live and peek at the ideas
+            currently in the lab. Each experience is designed to make everyday
+            life just a little easier—or a lot more fun.
+          </p>
+          <div class="card-grid">
+            <article class="card">
+              <div class="pill live">Live</div>
+              <h3>Blog</h3>
+              <p>Stories, lessons, and behind-the-scenes updates from the Simplify My Life journey.</p>
+              <a href="https://blog.simplifymylife.app" target="_blank" rel="noreferrer" class="card-link">Visit the blog</a>
+            </article>
+            <article class="card">
+              <div class="pill coming">Coming Soon</div>
+              <h3>Fun Zone</h3>
+              <p>Play browser-based experiments and mini-games at <strong>fun.simplifymylife.app</strong>.</p>
+              <a href="https://fun.simplifymylife.app" target="_blank" rel="noreferrer" class="card-link">Preview the playground</a>
+            </article>
+            <article class="card">
+              <div class="pill live">Live</div>
+              <h3>Password Generator</h3>
+              <p>Create secure, memorable passwords in seconds with our minimalist generator.</p>
+              <a href="#" class="card-link">Launch generator</a>
+            </article>
+            <article class="card">
+              <div class="pill live">Live</div>
+              <h3>AI Reddit Account Analysis</h3>
+              <p>Get insights on any Redditor using AI-powered summaries and personality breakdowns.</p>
+              <a href="#" class="card-link">Analyze a profile</a>
+            </article>
+            <article class="card">
+              <div class="pill planned">In Development</div>
+              <h3>Image Studio</h3>
+              <p>Manipulate, enhance, and remix visuals directly in the browser.</p>
+              <a href="#" class="card-link">Join the waitlist</a>
+            </article>
+            <article class="card">
+              <div class="pill planned">Roadmap</div>
+              <h3>More tools coming soon</h3>
+              <p>Workflow automation, AI copilots, and integrations that connect your favorite services.</p>
+              <a href="mailto:hello@simplifymylife.app" class="card-link">Suggest an idea</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta-section">
+          <div class="cta-card">
+            <h2>Deploy-ready & future-focused</h2>
+            <p>
+              This site is built as a lightweight static experience, ready for a
+              Vercel deploy. As new products launch, add them here and keep your
+              audience up to speed.
+            </p>
+            <a class="primary" href="https://vercel.com" target="_blank" rel="noreferrer">Deploy on Vercel</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> Simplify My Life. Crafted with focus and curiosity.</p>
+        <div class="footer-links">
+          <a href="mailto:hello@simplifymylife.app">Contact</a>
+          <a href="https://www.simplifymylife.app" target="_blank" rel="noreferrer">Main Site</a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      const yearEl = document.getElementById("year");
+      yearEl.textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
