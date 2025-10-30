@@ -62,8 +62,11 @@ build command.
   illustrations. The product cards ingest the live site favicons directly, but
   you can point each `img` at a local asset; if an icon fails to load, the
   gradient fallback in `assets/fallback-icon.svg` keeps the layout polished.
-- **Support widget:** Configure the Buy Me a Coffee widget by changing the
-  `data-*` attributes in the script tag near the bottom of `index.html`.
+- **Support widget:** Configure the Buy Me a Coffee widget by adjusting the
+  inline loader near the bottom of each HTML page. The snippet only assigns a
+  welcome message the first time a visitor loads the site (it tracks a
+  `bmcWidgetSeen` flag in `localStorage`), so tweak the copy or disable the
+  behavior by editing that script.
 - **Contact form:** Update the Formspree endpoint or adjust fields inside the
   `#contact` section of `index.html` to fit your workflow.
 - **Policies:** Update the copy inside `privacy.html`, `terms.html`,

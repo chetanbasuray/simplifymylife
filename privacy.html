@@ -116,17 +116,40 @@
       const yearEl = document.getElementById("year");
       yearEl.textContent = new Date().getFullYear();
     </script>
-    <script
-      data-name="BMC-Widget"
-      data-cfasync="false"
-      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-      data-id="donatetochetan"
-      data-description="Support me on Buy me a coffee!"
-      data-message="Thank you for visiting. If you find this useful, please consider buying me a coffee"
-      data-color="#BD5FFF"
-      data-position="Right"
-      data-x_margin="18"
-      data-y_margin="18"
-    ></script>
+    <script>
+      (function () {
+        const storageKey = "bmcWidgetSeen";
+        let hasSeenWidget = false;
+        try {
+          hasSeenWidget = localStorage.getItem(storageKey) === "true";
+        } catch (error) {
+          hasSeenWidget = false;
+        }
+        const widgetScript = document.createElement("script");
+        widgetScript.dataset.name = "BMC-Widget";
+        widgetScript.dataset.cfasync = "false";
+        widgetScript.src = "https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js";
+        widgetScript.dataset.id = "donatetochetan";
+        widgetScript.dataset.description = "Support me on Buy me a coffee!";
+        if (!hasSeenWidget) {
+          widgetScript.dataset.message =
+            "Thank you for visiting. If you find this useful, please consider buying me a coffee";
+        }
+        widgetScript.dataset.color = "#BD5FFF";
+        widgetScript.dataset.position = "Right";
+        widgetScript.dataset.x_margin = "18";
+        widgetScript.dataset.y_margin = "18";
+        widgetScript.addEventListener("load", function () {
+          if (!hasSeenWidget) {
+            try {
+              localStorage.setItem(storageKey, "true");
+            } catch (error) {
+              /* localStorage may be unavailable */
+            }
+          }
+        });
+        document.body.appendChild(widgetScript);
+      })();
+    </script>
   </body>
 </html>
