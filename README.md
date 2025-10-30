@@ -24,14 +24,22 @@ system so you can deploy it quickly and iterate without a heavy build step.
   so fans can tip at any time.
 - **Built-in contact form** – Collect messages securely via Formspree without
   adding server infrastructure.
+- **Ready-to-publish policies** – Privacy, terms, cookie, and accessibility
+  pages live alongside the landing page, and a sitemap is ready for search
+  engines.
 
 ## 📂 Project structure
 
 ```
-├── assets/        # SVG logos and icons used throughout the layout
-├── index.html     # Landing page markup and content
-├── styles.css     # Global styles and responsive layout rules
-└── README.md      # Project documentation (you are here)
+├── assets/            # SVG logos and icons used throughout the layout
+├── accessibility.html # Accessibility statement
+├── cookie-policy.html # Cookie policy details
+├── index.html         # Landing page markup and content
+├── privacy.html       # Privacy policy
+├── sitemap.xml        # Sitemap for search engines
+├── styles.css         # Global styles and responsive layout rules
+├── terms.html         # Terms of service
+└── README.md          # Project documentation (you are here)
 ```
 
 ## 🚀 Getting started
@@ -51,14 +59,16 @@ build command.
 - **Content:** Edit `index.html` to rename sections, refresh copy, or link to
   new destinations such as updated product URLs.
 - **Assets:** Replace the SVGs in `assets/` with your own logos or
-  illustrations. The product cards can ingest remote favicons (via the Google
-  S2 API) or you can point each `img` at a local asset; if an icon fails to
-  load, the gradient fallback in `assets/fallback-icon.svg` keeps the layout
-  polished.
+  illustrations. The product cards ingest the live site favicons directly, but
+  you can point each `img` at a local asset; if an icon fails to load, the
+  gradient fallback in `assets/fallback-icon.svg` keeps the layout polished.
 - **Support widget:** Configure the Buy Me a Coffee widget by changing the
   `data-*` attributes in the script tag near the bottom of `index.html`.
 - **Contact form:** Update the Formspree endpoint or adjust fields inside the
   `#contact` section of `index.html` to fit your workflow.
+- **Policies:** Update the copy inside `privacy.html`, `terms.html`,
+  `cookie-policy.html`, and `accessibility.html` to reflect your organization,
+  and regenerate `sitemap.xml` if you add or remove pages.
 
 ## 🌐 Deployment
 
