@@ -1,27 +1,70 @@
 # Simplify My Life
 
-A modern static landing page for the Simplify My Life ecosystem. This site is
-ready to deploy on [Vercel](https://vercel.com) and highlight your collection of
-apps, tools, and playful experiences.
+A modern, single-page marketing site that showcases the Simplify My Life
+ecosystem. The project is built with semantic HTML and a bespoke CSS design
+system so you can deploy it quickly and iterate without a heavy build step.
 
-## Getting started
+## ✨ Features
 
-1. Install dependencies (none required for a static site).
-2. Preview locally by opening `index.html` in your browser.
-3. Deploy to Vercel as a static project.
+- **Deployment-ready static page** – No frameworks or tooling required, so it
+  works on any static host.
+- **Curated product grid** – Spotlight live apps, upcoming launches, and ideas
+  still in the lab.
+- **Call-to-action modules** – Encourage visitors to read the blog, explore the
+  ecosystem, or get in touch.
+- **Automatic year updates** – A tiny script keeps the footer copyright
+  current.
+- **Buy Me a Coffee button** – Visitors can support the project with a single
+  click.
 
-## Customization
+## 📂 Project structure
 
-- Update links in `index.html` as new products launch.
-- Adjust the design system in `styles.css` to match future branding tweaks.
-- Replace the placeholder `#` URLs once each tool has a dedicated home.
+```
+├── assets/        # SVG logos and icons used throughout the layout
+├── index.html     # Landing page markup and content
+├── styles.css     # Global styles and responsive layout rules
+└── README.md      # Project documentation (you are here)
+```
 
-## Deployment tips
+## 🚀 Getting started
 
-- Push this repository to GitHub and import it into Vercel.
-- Ensure the project is configured as a static site (no build command needed).
-- Map the deployment to `www.simplifymylife.app` in your Vercel dashboard.
+1. Clone the repository: `git clone https://github.com/<your-username>/simplifymylife.git`
+2. Open `index.html` in your browser to preview the site locally.
+3. Update the content to reflect your brand (see customization tips below).
 
-## License
+Because this is a static site, you do not need to install dependencies or run a
+build command.
 
-MIT
+## 🎨 Customization tips
+
+- **Branding:** Update colors, typography, and spacing inside `styles.css` to
+  align with your visual identity.
+- **Content:** Edit `index.html` to rename sections, refresh copy, or link to
+  new destinations.
+- **Assets:** Replace the SVGs in `assets/` with your own logos or illustrations.
+- **Support button:** Configure the Buy Me a Coffee button by changing the
+  `data-*` attributes in the script tag near the bottom of `index.html`.
+
+## 🌐 Deployment
+
+Deploy the site to any static host (Vercel, Netlify, GitHub Pages, etc.). For
+Vercel specifically:
+
+1. Push this repository to GitHub.
+2. Import the repo into Vercel and choose the **Static Site** framework
+   preset.
+3. Leave the build command empty and set the output directory to `./`.
+4. Map your production domain (for example `www.simplifymylife.app`) in the
+   Vercel dashboard.
+
+## 🤝 Contributing
+
+Issues and pull requests are welcome! If you plan to submit changes:
+
+1. Fork the repo and create a feature branch.
+2. Make your updates with clear, descriptive commits.
+3. Open a pull request that explains the motivation behind the change.
+
+## 📄 License
+
+This project is licensed under the MIT License.
