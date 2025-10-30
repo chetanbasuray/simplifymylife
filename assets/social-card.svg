@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">Simplify My Life social preview</title>
-  <desc id="desc">A vibrant PixelSwift generated card highlighting Simplify My Life.</desc>
+  <desc id="desc">A vibrant pixelswift generated card highlighting Simplify My Life.</desc>
   <defs>
     <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#3E2AD3" />
@@ -38,7 +38,7 @@
       Simplify My Life
     </text>
     <text x="0" y="132" fill="#E1D9FF" font-family="'Inter', 'Segoe UI', sans-serif" font-size="30" letter-spacing="0.08em" text-transform="uppercase">
-      Crafted with PixelSwift Studio
+      Crafted with pixelswift
     </text>
     <text x="0" y="200" fill="#F6F3FF" font-family="'Inter', 'Segoe UI', sans-serif" font-size="30">
       Playful tools and thoughtful helpers for everyday wins.
