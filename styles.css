@@ -293,8 +293,125 @@ body {
   transform: translateX(4px);
 }
 
+
+.contact {
+  margin: 6rem 0;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+  background: rgba(16, 20, 41, 0.6);
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 80px -40px rgba(15, 23, 42, 0.8);
+  padding: clamp(2.5rem, 4vw, 3.5rem);
+  backdrop-filter: blur(24px);
+}
+
+.contact-copy h2 {
+  font-size: clamp(1.5rem, 1.1rem + 1.7vw, 2.5rem);
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.contact-copy p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(226, 232, 240, 0.82);
+  margin: 0;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(226, 232, 240, 0.9);
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(15, 23, 42, 0.6);
+  color: #f8fafc;
+  padding: 0.9rem 1.1rem;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: rgba(99, 102, 241, 0.7);
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.contact-form .primary {
+  justify-self: flex-start;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form .primary:hover,
+.contact-form .primary:focus-visible {
+  opacity: 0.85;
+}
+
+.honeypot {
+  position: absolute;
+  left: -5000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-feedback {
+  font-size: 0.95rem;
+  min-height: 1.25rem;
+  color: rgba(226, 232, 240, 0.85);
+}
+
+.form-feedback.success {
+  color: #34d399;
+}
+
+.form-feedback.error {
+  color: #f87171;
+}
+
 .cta-section {
   margin: 5rem 0 4rem;
+}
+
+@media (max-width: 960px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin: 4rem 0 3rem;
+  }
+
+  .contact-content {
+    padding: 2.25rem;
+  }
 }
 
 .cta-card {
@@ -390,5 +507,14 @@ body {
 
   .footer-links {
     gap: 1rem;
+  }
+
+  .contact-content {
+    padding: 2rem;
+  }
+
+  .contact-form .primary {
+    width: 100%;
+    justify-content: center;
   }
 }

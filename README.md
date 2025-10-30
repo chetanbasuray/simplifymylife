@@ -16,6 +16,7 @@ apps, tools, and playful experiences.
 - Adjust the design system in `styles.css` to match future branding tweaks.
 - Keep the product URLs in `index.html` aligned with the live experiences (blog, games, password generator, RedLytics, etc.).
 - Swap in your own branding by editing the SVG assets in `assets/logo.svg` and `assets/icon.svg`.
+- Update the contact form endpoint or copy in `index.html` if you change messaging or Formspree configuration. The form auto-includes the origin domain and uses a honeypot field for bot protection.
 
 ## Deployment tips
 
