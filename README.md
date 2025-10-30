@@ -9,7 +9,8 @@ system so you can deploy it quickly and iterate without a heavy build step.
 - **Deployment-ready static page** – No frameworks or tooling required, so it
   works on any static host.
 - **Curated product grid** – Spotlight live apps, upcoming launches, and ideas
-  still in the lab.
+  still in the lab. Cards link to real experiences like the
+  [password generator](http://password-generator.simplifymylife.app/).
 - **Call-to-action modules** – Encourage visitors to read the blog, explore the
   ecosystem, or get in touch.
 - **Automatic year updates** – A tiny script keeps the footer copyright
@@ -42,7 +43,7 @@ build command.
 - **Branding:** Update colors, typography, and spacing inside `styles.css` to
   align with your visual identity.
 - **Content:** Edit `index.html` to rename sections, refresh copy, or link to
-  new destinations.
+  new destinations such as updated product URLs.
 - **Assets:** Replace the SVGs in `assets/` with your own logos or illustrations.
 - **Support widget:** Configure the Buy Me a Coffee widget by changing the
   `data-*` attributes in the script tag near the bottom of `index.html`.
