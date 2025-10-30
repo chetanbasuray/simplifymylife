@@ -276,31 +276,6 @@ body {
   transform: translateX(4px);
 }
 
-.cta-section {
-  margin: 5rem 0 4rem;
-}
-
-.cta-card {
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(244, 114, 182, 0.12));
-  border-radius: 1.8rem;
-  padding: clamp(2rem, 4vw, 3rem);
-  text-align: center;
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  box-shadow: 0 30px 60px -35px var(--shadow-color);
-}
-
-.cta-card h2 {
-  font-size: clamp(2rem, 4vw, 2.8rem);
-  margin-bottom: 1rem;
-}
-
-.cta-card p {
-  margin: 0 auto 2rem;
-  color: var(--muted-color);
-  max-width: 600px;
-  line-height: 1.6;
-}
-
 .contact {
   margin: 5rem 0 4rem;
   display: flex;

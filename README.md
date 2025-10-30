@@ -54,15 +54,13 @@ build command.
 
 ## 🌐 Deployment
 
-Deploy the site to any static host (Vercel, Netlify, GitHub Pages, etc.). For
-Vercel specifically:
+Deploy the site to any static host (Vercel, Netlify, GitHub Pages, etc.):
 
-1. Push this repository to GitHub.
-2. Import the repo into Vercel and choose the **Static Site** framework
-   preset.
-3. Leave the build command empty and set the output directory to `./`.
-4. Map your production domain (for example `www.simplifymylife.app`) in the
-   Vercel dashboard.
+1. Push this repository to GitHub or your preferred Git provider.
+2. Configure your host to serve the contents of the repository root as a
+   static site—no build step is required.
+3. Point your custom domain (for example `www.simplifymylife.app`) at the host
+   once you're ready to go live.
 
 ## 🤝 Contributing
 
